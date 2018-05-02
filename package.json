@@ -1,0 +1,19 @@
+{
+  "name": "weather_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.0.11",
+    "jQuery": "^1.7.4"
+  }
+}

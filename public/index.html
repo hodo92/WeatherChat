@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>weater_chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+
+<body>
+
+    <body>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="page-header">
+                    <h1>WeatherChat
+                        <i class="fas fa-cloud"></i>
+                    </h1>
+                </div>
+                <div class="book">
+                </div>
+                <form>
+                    <h3>Enter city name</h3>
+                    <div class="form-group">
+                        <input type="text" id="city-name" class="form-control" placeholder="city name">
+                    </div>
+                    <button type="button" class="btn btn-primary search-city">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="temp">loading weather data</div>
+
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="handlebars/dist/handlebars.min.js"></script>
+        <script type="module" src="main.js"></script>
+    </body>
+
+</html>
