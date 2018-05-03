@@ -15,34 +15,58 @@
 </head>
 
 <body>
-
-    <body>
+    <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-                <div class="page-header">
-                    <h1>WeatherChat
-                        <i class="fas fa-cloud"></i>
-                    </h1>
-                </div>
-                <div class="book">
-                </div>
-                <form>
-                    <h3>Enter city name</h3>
-                    <div class="form-group">
-                        <input type="text" id="city-name" class="form-control" placeholder="city name">
-                    </div>
-                    <button type="button" class="btn btn-primary search-city">Search</button>
+            <div class="col-md-12">
+                <h1>Weather App</h1>
+                <br>
+                <form id="weather_form" class="input-group">
+                    <input type=text class="form-control get-city input-lg" placeholder="Enter City" />
+                    <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary btn-lg ">Get Temp</button>
+                </span>
                 </form>
+                <hr>
             </div>
         </div>
 
-        <div id="temp">loading weather data</div>
 
+
+        <div class="results">
+        </div>
+
+        <script id="weather-template" type="text/x-handlebars-template">
+            <div class="row infos">
+                <div class="col-md-12">
+                    <div class="result ">
+                        <blockquote>
+                                <div class="name text-uppercase">{{name}} <i class="fa fa-trash pull-right" aria-hidden="true"></i></div>
+                                <strong><span>{{C}}°C/{{F}}°F </strong> at {{time}} on {{date}}</span> <br>
+                                <hr>
+                                <span class="type-weather"><div class="weather-img"></div><em>{{typeOfWeather}}</em></span>
+                                <div class="comment-HTML">
+                                    <ul class="list-comments">
+                                    </ul>
+                                </div>
+                                <form id="comment_form" class="form-horizontal input-group ">
+                                    <input type=text class="form-control comment " placeholder="Comment about the weather in {{name}}" />
+                                    <span class="input-group-btn">
+                                <button class="comment-btn btn btn-success">Comment</button>
+                            </span>
+                                </form>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+        </script>
+        </div>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="handlebars/dist/handlebars.min.js"></script>
         <script type="module" src="main.js"></script>
+
+  
     </body>
 
 </html>

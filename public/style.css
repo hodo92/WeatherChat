@@ -1,0 +1,19 @@
+.fa-trash{
+    color : red;
+}
+
+.fa-cloud {
+    color : grey;
+}
+
+.result{
+    color : rgb(255, 255, 255);
+    /* background-size: 700px 800px; */
+    background-size : cover;
+    
+ 
+
+}
+ body{
+background-color: skyblue;
+}
